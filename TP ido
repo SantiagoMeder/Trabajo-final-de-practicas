@@ -1,0 +1,28 @@
+print ("Bienvenido al programa para obtener su IMC")
+persona={"Nombre¨:"","Apellido":"","Edad":0,"Peso":0,"Altura":0,"Direccion","","Telefono",""}
+def cat_imc(imc):
+if imc < 18.5:
+print(¨Su diagnostico de IMC es de bajo peso¨)
+  else if imc < 24.9:
+print(¨Su diagnostico de IMC es de peso normal¨
+  else if imc < 29.9:
+print(¨Su diagnostico de IMC es de sobre peso¨
+ else if imc < 34.9:
+print(¨Su diagnostico de IMC es de obesidad tipo I¨
+ else if imc < 39.9:
+print(¨Su diagnostico de IMC es de obesidad tipo II¨
+ else if imc < 40:
+print(¨Su diagnostico de IMC es de obesidad tipo III¨
+
+def imprimir ():
+for dato in persona:
+print (dato, persona [dato])
+
+for a in persona:
+persona[a]=input(f"Complete con su {a}¨)
+
+imc=round(float(persona[¨Peso en Kg:¨])/(float(persona[¨Altura en Mts¨])**2),2)
+
+persona[¨IMC¨]=imc
+imprimir()
+cat_imc(imc)
